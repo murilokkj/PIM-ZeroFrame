@@ -1,0 +1,461 @@
+/* Estilos globais e variáveis de tema */
+
+:root {
+    --primary-color: #8C5A3C;
+    --secondary-color: #F5EBE0;
+    --accent-color: #201B1B;
+    --accent-secondary-color: white;
+    --text-color: black;
+    --page-font: 'Montserrat', sans-serif;
+}
+
+.modoescuro {
+    --primary-color: #48312E;
+    --secondary-color: #201B1B;
+    --accent-color: #F5EBE0;
+    --text-color: white;
+    --accent-secondary-color: #9b655d;
+    --third-color: #ffc484;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: var(--page-font);
+    color: var(--accent-color)
+}
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    height: 4rem;
+    padding: 0.3rem 2rem 0.3rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-link-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.logo {
+  height: 4rem; /* ajuste aqui */
+  width: auto;
+  object-fit: contain;
+}
+
+li {
+    list-style: none;
+}
+
+/* Estilos para as nav-bar do header */
+
+.links {
+    list-style: none;
+}
+
+.itens-nav-menus {
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    font-family: var(--page-font);
+    color: #F5EBE0;
+    font-weight: 500;
+
+}
+
+.itens-nav-menus:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-menus-ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-actions-ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-actions-icon i {
+    transition: 0.3s ease-in-out;
+    color: #F5EBE0;
+    font-size: 1.5rem;
+}
+
+.user-actions-icon i:hover {
+    color: var(--accent-color);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.modoescuro .user-actions-icon i:hover {
+    color: var(--third-color);
+}
+
+/* Estilos do botão de alternância de tema */
+
+.theme-toggle-button {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-toggle-button i {
+    transition: 0.3s ease-in-out;
+    color: #F5EBE0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.theme-toggle-button i:hover {
+    color: var(--accent-color);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.modoescuro .theme-toggle-button i:hover {
+    color: var(--third-color);
+}
+
+
+.theme-toggle-button i:last-child {
+    display: none;
+}
+
+.darkmode .theme-toggle-button i:first-child {
+    display: none;
+}
+
+.darkmode .theme-toggle-button i:last-child {
+    display: block;
+}
+
+/* Continuação do header */
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para a search-bar do header */
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    width: 20rem;
+    margin: 0 1rem 0 1rem;
+    height: 2.8rem;
+    background-color: var(--secondary-color);
+
+}
+
+.search-bar-container i {
+    color: var(--primary-color);
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.modoescuro .search-bar-container i {
+    color: var(--accent-color);
+}
+
+.search-bar {
+    font-family: var(--page-font);
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    color: var(--primary-color);
+}
+
+.modoescuro .search-bar {
+    color: var(--accent-color);
+}
+
+.search-bar::placeholder {
+    color: var(--primary-color);
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+.modoescuro .search-bar::placeholder {
+    color: var(--accent-color);
+}
+
+.search-bar-container input:focus-visible {
+    outline: none;
+}
+
+/* Estilos do banner da tela inicial */
+
+.banner {
+    width: 100%;
+    height: 50vh;
+}
+
+/* Estilos para as seções de produtos */
+
+.section-container {
+    margin-top: 1.5rem;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--page-font);
+}
+
+.section-header-container {
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.ver-todos-link {
+
+    /* Estilos para o link "Ver Todos" dentro dos títulos das seções de produtos */
+
+    transition: 0.3s ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.ver-todos-link:hover {
+    font-weight: 800;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+}
+
+.ver-todos-arrow {
+    height: 18px;
+    width: 18px;
+}
+
+/* Estilos para o container dos produtos dentro das seções */
+
+.products-container {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+}
+
+
+/* Estilos para os cards de produtos */
+
+.product-card {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+    width: 12vw;
+    gap: 0.4rem;
+    background-color: var(--accent-secondary-color);
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.modoescuro .product-card {
+    background-color: var(--primary-color);
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    flex-grow: 1;
+}
+
+.product-image {
+  height: 12.5rem;
+  width: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.product-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover; /* mantém proporção */
+}
+
+.product-category {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.product-name {
+    font-weight: 600;
+
+}
+
+.product-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* .product-sale {
+    box-shadow: #FD3737 0px 0px 0.8rem;
+    border: #FD3737 0.2rem solid;
+} */
+
+.product-sale .product-price {
+    color: #FD3737;
+}
+
+.product-sale .product-discount {
+    text-decoration: line-through;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.add-to-cart-button {
+
+    /* Estilos para o botão "Adicionar ao Carrinho" dentro dos cards de produtos */
+
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    gap: 0.5rem;
+    background-color: var(--primary-color);
+    color: #F5EBE0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    height: 2.5rem;
+    font-family: var(--page-font);
+}
+
+.modoescuro .add-to-cart-button {
+    background-color: var(--accent-secondary-color);
+}
+
+.add-to-cart-button i {
+    font-size: 1.2rem;
+}
+
+.add-to-cart-button:hover {
+    background-color: var(--accent-color);
+    color: var(--accent-secondary-color);
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+.multimarcas-section {
+    margin-bottom: 2rem;
+}
+
+/* Estilos dos footers */
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 2rem;
+}
+
+.footer-itens-container {
+    display: flex;
+    gap: 6rem;
+
+}
+
+.footer-zf-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.footer-logo {
+    height: 8rem;
+    width: 8rem;
+}
+
+.footer-text {
+    text-align: center;
+
+}
+
+.footer-link {
+    transition: 0.3s ease-in-out;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-content-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.line {
+    border-left: 2px solid var(--secondary-color);
+    height: 10rem;
+    margin: 0 5rem;
+}
+
+.modoescuro .footer-content-title {
+    color: var(--accent-color);
+}
+
+.modoescuro .footer-link {
+    color: var(--accent-color);
+}

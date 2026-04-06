@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./carrossel-categorias/carrossel-categorias.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="./carrossel-categorias/carrossel-categorias.js"></script>
+    <script type="text/javascript" src="./theme-toggle.js" defer></script>
+    <link rel="icon" href="./assets/logo-zf.ico" type="image/png">
+    <title>Zero Frame</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="#" class="logo-link-header">
+            <img src="assets/logo zf.png" alt="Zero Frame Logo" class="logo">
+        </a>
+        <nav class="navigation-header">
+            <ul class="nav-menus-ul links">
+                <li><a href="#" class="itens-nav-menus">ORIGINAIS</a></li>
+                <li><a href="#" class="itens-nav-menus">MULTIMARCAS</a></li>
+                <li><a href="#" class="itens-nav-menus">SOBRE NÓS</a></li>
+            </ul>
+
+            <div class="search-bar-container">
+                <input type="text" placeholder="O que você está procurando?" class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <ul class="user-actions-ul links">
+                <li><a href="#" class="user-actions-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#" class="user-actions-icon"><i class="fa-solid fa-user"></i></a></li>
+                <li><button class="theme-toggle-button" id="toggle-button">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <img src="assets/banner.png" alt="Banner Zero Frame" class="banner">
+
+        <section class="recomendados-section section-container">
+
+            <div class="section-header-container">
+                <div class="section-header">
+                    <h2 class="section-title">PRODUTOS RECOMENDADOS</h2>
+                    <a href="#" class="ver-todos-link">VER TODOS
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+                <hr>
+            </div>
+
+            <ul class="products-container">
+                <li class="product-card">
+                    <img src="./assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Calçados - Multimarcas</p>
+                        <h3 class="product-name">Air Jordan 1 High Latte</h3>
+                        <p class="product-price">R$ 1.299,99</p>
+                        <p class="price-installment">ou 10x de R$ 129,99 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card product-sale">
+                    <img src="./assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Camisa - Multimarcas</p>
+                        <h3 class="product-name">Camisa Oversized Preta</h3>
+                        <p class="product-discount">R$ 120,00</p>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Bermudas - Multimarcas</p>
+                        <h3 class="product-name">Bermuda Jeans</h3>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card product-sale">
+                    <img src="./assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Blusas - Multimarcas</p>
+                        <h3 class="product-name">Blusa Moletom</h3>
+                        <p class="product-discount">R$ 320,00</p>
+                        <p class="product-price">R$ 220,00</p>
+                        <p class="price-installment">ou 10x de R$ 22,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Calças - Multimarcas</p>
+                        <h3 class="product-name">Calça Jeans Baggy Levi's</h3>
+                        <p class="product-price">R$ 200,00</p>
+                        <p class="price-installment">ou 10x de R$ 20,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card product-sale">
+                    <img src="./assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Acessórios - Multimarcas</p>
+                        <h3 class="product-name">Corrente Ice</h3>
+                        <p class="product-discount">R$ 500,00</p>
+                        <p class="product-price">R$ 310,90</p>
+                        <p class="price-installment">ou 10x de R$ 31,90 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/tenis2.png" alt="Produto 7" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Calçados - Multimarcas</p>
+                        <h3 class="product-name">Adidas x Bad Bunny Forum Low</h3>
+                        <p class="product-price">R$ 1.000,00</p>
+                        <p class="price-installment">ou 10x de R$ 100,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+            </ul>
+
+
+        </section>
+
+        <section class="originais-section section-container" id="originais-em-alta">
+
+            <div class="section-header-container">
+                <div class="section-header">
+                    <h2 class="section-title">ORIGINAIS ZERO FRAME</h2>
+                    <a href="#" class="ver-todos-link">VER TODOS
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+                <hr>
+            </div>
+
+            <ul class="products-container">
+
+                <li class="product-card">
+                    <img src="./assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
+                    <div>
+                        <p class="product-category">Calçados - Originais</p>
+                        <h3 class="product-name">Air Jordan 1 High Latte</h3>
+                        <p class="product-price">R$ 1.299,99</p>
+                        <p class="price-installment">ou 10x de R$ 129,99 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
+                    <div>
+                        <p class="product-category">Camisa - Originais</p>
+                        <h3 class="product-name">Camisa Oversized Preta</h3>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Bermudas - Multimarcas</p>
+                        <h3 class="product-name">Bermuda Jeans</h3>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card product-sale">
+                    <img src="./assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Blusas - Multimarcas</p>
+                        <h3 class="product-name">Blusa Moletom</h3>
+                        <p class="product-discount">R$ 320,00</p>
+                        <p class="product-price">R$ 220,00</p>
+                        <p class="price-installment">ou 10x de R$ 22,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Calças - Multimarcas</p>
+                        <h3 class="product-name">Calça Jeans Baggy Levi's</h3>
+                        <p class="product-price">R$ 200,00</p>
+                        <p class="price-installment">ou 10x de R$ 20,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card product-sale">
+                    <img src="./assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Acessórios - Multimarcas</p>
+                        <h3 class="product-name">Corrente Ice</h3>
+                        <p class="product-discount">R$ 500,00</p>
+                        <p class="product-price">R$ 310,90</p>
+                        <p class="price-installment">ou 10x de R$ 31,90 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/tenis2.png" alt="Produto 7" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Calçados - Multimarcas</p>
+                        <h3 class="product-name">Adidas x Bad Bunny Forum Low</h3>
+                        <p class="product-price">R$ 1.000,00</p>
+                        <p class="price-installment">ou 10x de R$ 100,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="multimarcas-section section-container">
+
+            <div class="section-header-container">
+                <div class="section-header" id="multimarcas-em-alta">
+                    <h2 class="section-title">MULTIMARCAS</h2>
+                    <a href="#" class="ver-todos-link">VER TODOS
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+                <hr>
+            </div>
+
+            <ul class="products-container">
+
+                <li class="product-card">
+                    <img src="./assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
+                    <div>
+                        <p class="product-category">Calçados - Multimarcas</p>
+                        <h3 class="product-name">Air Jordan 1 High Latte</h3>
+                        <p class="product-price">R$ 1.299,99</p>
+                        <p class="price-installment">ou 10x de R$ 129,99 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
+                    <div>
+                        <p class="product-category">Camisa - Multimarcas</p>
+                        <h3 class="product-name">Camisa Oversized Preta</h3>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Bermudas - Multimarcas</p>
+                        <h3 class="product-name">Bermuda Jeans</h3>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card product-sale">
+                    <img src="./assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Blusas - Multimarcas</p>
+                        <h3 class="product-name">Blusa Moletom</h3>
+                        <p class="product-discount">R$ 320,00</p>
+                        <p class="product-price">R$ 220,00</p>
+                        <p class="price-installment">ou 10x de R$ 22,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Calças - Multimarcas</p>
+                        <h3 class="product-name">Calça Jeans Baggy Levi's</h3>
+                        <p class="product-price">R$ 200,00</p>
+                        <p class="price-installment">ou 10x de R$ 20,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card product-sale">
+                    <img src="./assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Acessórios - Multimarcas</p>
+                        <h3 class="product-name">Corrente Ice</h3>
+                        <p class="product-discount">R$ 500,00</p>
+                        <p class="product-price">R$ 310,90</p>
+                        <p class="price-installment">ou 10x de R$ 31,90 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+                <li class="product-card">
+                    <img src="./assets/products/tenis2.png" alt="Produto 7" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Calçados - Multimarcas</p>
+                        <h3 class="product-name">Adidas x Bad Bunny Forum Low</h3>
+                        <p class="product-price">R$ 1.000,00</p>
+                        <p class="price-installment">ou 10x de R$ 100,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <div class="multimarcas-section section-container">
+
+            <div class="section-header-container">
+                <div class="section-header">
+                    <h2 class="section-title">CATEGORIAS</h2>
+                </div>
+                <hr>
+            </div>
+
+            <div class="categories-carrossel">
+                <button class="nav-arrow arrow-left" onclick="changeSlide(-1)">&#10094;</button>
+
+                <div class="slider-wrapper" id="slider">
+                    <div class="card active" onclick="clickToSlide(0)">
+                        <img src="./assets/products/aj1-high-latte.png">
+                        <div class="card-info">
+                            <h3 class="category-title">Calçados</h3>
+                            <a href="#" class="btn-link">Ver todos</a>
+                        </div>
+                    </div>
+                    <div class="card" onclick="clickToSlide(1)">
+                        <img src="./assets/products/bermuda-jeans.jpg">
+                        <div class="card-info">
+                            <h3 class="category-title">Bermudas</h3>
+                            <a href="#" class="btn-link">Ver todos</a>
+                        </div>
+                    </div>
+                    <div class="card" onclick="clickToSlide(2)">
+                        <img src="./assets/products/blusa-moletom.jpg">
+                        <div class="card-info">
+                            <h3 class="category-title">Blusas</h3>
+                            <a href="#" class="btn-link">Ver todos</a>
+                        </div>
+                    </div>
+                    <div class="card" onclick="clickToSlide(3)">
+                        <img src="./assets/products/calca-levis-clara.png">
+                        <div class="card-info">
+                            <h3 class="category-title">Calças</h3>
+                            <a href="#" class="btn-link">Ver todos</a>
+                        </div>
+                    </div>
+                    <div class="card" onclick="clickToSlide(4)">
+                        <img src="./assets/products/camisa-over-black.png">
+                        <div class="card-info">
+                            <h3 class="category-title">Camisas</h3>
+                            <a href="#" class="btn-link">Ver todos</a>
+                        </div>
+                    </div>
+                    <div class="card" onclick="clickToSlide(5)">
+                        <img src="./assets/products/corrente-ice.png">
+                        <div class="card-info">
+                            <h3 class="category-title">Acessórios</h3>
+                            <a href="#" class="btn-link">Ver todos</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="nav-arrow arrow-right" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-zf-container">
+            <img src="assets/logo zf.png" alt="Zero Frame Logo" class="footer-logo">
+            <p class="footer-text footer-link">© 2026 Zero Frame.<br>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="line footer-link"></div>
+
+        <div class="footer-itens-container">
+
+            <div class="footer-about-container">
+                <h3 class="footer-content-title">SOBRE</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#" class="footer-link">Conheça a empresa</a></li>
+                    <li><a href="#" class="footer-link">Criadores</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-multimarcas-container">
+                <h3 class="footer-content-title">MULTIMARCAS</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#multimarcas-em-alta" class="footer-link">Produtos em alta</a></li>
+                    <li><a href="#" class="footer-link">Todos os produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-originais-container">
+                <h3 class="footer-content-title">ORIGINAIS</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#originais-em-alta" class="footer-link">Produtos em alta</a></li>
+                    <li><a href="#" class="footer-link">Todos os produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-categorias-container">
+                <h3 class="footer-content-title">CATEGORIAS</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#" class="footer-link">Camisas</a></li>
+                    <li><a href="#" class="footer-link">Blusas</a></li>
+                    <li><a href="#" class="footer-link">Calças</a></li>
+                    <li><a href="#" class="footer-link">Bermudas</a></li>
+                    <li><a href="#" class="footer-link">Calçados</a></li>
+                    <li><a href="#" class="footer-link">Acessórios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

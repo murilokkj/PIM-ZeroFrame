@@ -1,0 +1,188 @@
+:root {
+  --card-size: 320px;
+  --primary-color: #8C5A3C;
+  --secondary-color: #F5EBE0;
+  --accent-color: #201B1B;
+  --accent-secondary-color: white;
+  --text-color: black;
+  --page-font: 'Montserrat', sans-serif;
+  --gap: 280px;
+  /* Controle aqui a distância das imagens */
+}
+
+.modoescuro {
+  --primary-color: #48312E;
+  --secondary-color: #201B1B;
+  --accent-color: #F5EBE0;
+  --text-color: white;
+  --accent-secondary-color: #8C5A3C;
+}
+
+.categories-carrossel {
+  background-color: var(--primary-color);
+  height: 500px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+
+  margin: 0 auto;
+  /* Centraliza o bloco inteiro na página */
+  width: 100%;
+
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: var(--card-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+}
+
+.card {
+  position: absolute;
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: 15px;
+  overflow: hidden;
+  /* Transição rápida para o movimento do mouse e suave para o zoom */
+  transition: transform 0.5s ease-out, opacity 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: #000;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px;
+  top: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: white;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+/* Principal (Centro) */
+.card.active {
+  transform: translate3d(0, 0, 150px);
+  z-index: 10;
+  opacity: 1;
+}
+
+/* Efeito de aumento leve no Hover */
+.card.active:hover {
+  transform: translate3d(0, 0, 180px) scale(1.05) !important;
+}
+
+.card.active img {
+  opacity: 1;
+}
+
+.card.active .card-info {
+  transform: translateY(0);
+}
+
+.card.prev {
+  transform: translate3d(calc(var(--gap) * -1), 0, 0) scale(0.8) rotateY(20deg);
+  z-index: 5;
+  opacity: 0.5;
+}
+
+.card.next {
+  transform: translate3d(var(--gap), 0, 0) scale(0.8) rotateY(-20deg);
+  z-index: 5;
+  opacity: 0.5;
+}
+
+.card.hide {
+  transform: translate3d(0, 0, -200px) scale(0.5);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  /* Adicione esta linha para deixar o aumento suave */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Adicione este bloco para criar o efeito de zoom ao passar o mouse */
+.btn-link:hover {
+  transform: scale(1.1);
+  background: var(--secondary-color);
+  color: #48312E;
+  /* Aumenta o botão em 10% */
+  /* Opcional: você pode clarear um pouco a cor de fundo aqui se quiser */
+}
+
+.modoescuro .btn-link {
+  background: var(--accent-secondary-color);
+  color: var(--accent-color);
+}
+
+
+.modoescuro .btn-link:hover {
+  background: var(--accent-color);
+  color: var(--accent-secondary-color);
+}
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 20px;
+}
+
+.nav-arrow:hover {
+  background: var(--secondary-color);
+  color: var(--accent-secondary-color);
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-shadow: #000 0px 0px 5px;
+}
