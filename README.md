@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Zero Frame é um site de e-commerce dedicado à venda de roupas, calçados e acessórios originais e multimarcas. O projeto oferece uma experiência de compra online com navegação intuitiva, incluindo seções para produtos recomendados, originais da marca e multimarcas.
+Zero Frame é um site de e-commerce dedicado à venda de roupas, calçados e acessórios originais e multimarcas. O projeto oferece uma experiência de compra online com navegação intuitiva, incluindo seções para produtos recomendados, originais da marca e multimarcas. Inclui páginas de login e registro para usuários.
 
 ## Funcionalidades
 
@@ -14,38 +14,46 @@ Zero Frame é um site de e-commerce dedicado à venda de roupas, calçados e ace
 - **Carrossel de Categorias**: Navegação por categorias de produtos como Calçados, Bermudas, Blusas, etc.
 - **Produtos Recomendados**: Seção destacando produtos em destaque.
 - **Seções de Produtos**: Originais Zero Frame e Multimarcas.
+- **Páginas de Autenticação**: Login e registro de usuários.
 
 ## Tecnologias Utilizadas
 
 - **HTML5**: Estrutura do site.
 - **CSS3**: Estilização e layout responsivo.
 - **JavaScript**: Interatividade, incluindo o toggle de tema e carrossel.
-- **React**: Utilizado para componentes dinâmicos, como o carrossel de categorias (via Babel).
 - **Font Awesome**: Ícones para navegação e botões.
 - **Google Fonts**: Fonte Montserrat para tipografia.
+
+## Como Executar
+
+1. Clone ou baixe o repositório.
+2. Abra o arquivo `index.html` em um navegador web para acessar a página principal.
+3. Para as páginas de login e registro, navegue para `pages/login-page/login.html` e `pages/register-page/register.html`, respectivamente.
 
 ## Estrutura do Projeto
 
 ```
-PIM/
+PIM-ZeroFrame/
 ├── index.html                 # Página principal
+├── README.md                  # Este arquivo
 ├── style.css                  # Estilos globais
 ├── theme-toggle.js            # Script para alternância de tema
 ├── assets/
-│   ├── logo zf.png            # Logo da marca
-│   ├── banner.png             # Banner principal
 │   └── products/              # Imagens dos produtos
-│       ├── aj1-high-latte.png
-│       ├── camisa-over-black.png
-│       ├── calca-levis-clara.png
-│       ├── corrente-ice.png
-│       ├── tenis2.png
-│       ├── bermuda-jeans.jpg
-│       └── blusa-moletom.jpg
 ├── carrossel-categorias/
 │   ├── carrossel-categorias.css  # Estilos do carrossel
 │   └── carrossel-categorias.js   # Script do carrossel
-└── pages/                      # Diretório para páginas adicionais (atualmente vazio)
+└── pages/                      # Diretório para páginas adicionais
+    ├── login-page/
+    │   ├── login.html          # Página de login
+    │   ├── login.css           # Estilos da página de login
+    │   ├── theme-toggle.js     # Script de toggle de tema para login
+    │   └── assets/             # Assets específicos da página de login
+    └── register-page/
+        ├── register.html       # Página de registro
+        ├── register.css        # Estilos da página de registro
+        ├── theme-toggle.js     # Script de toggle de tema para registro
+        └── assets/             # Assets específicos da página de registro
 ```
 
 ## Como Executar

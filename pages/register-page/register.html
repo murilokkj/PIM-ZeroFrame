@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logo-zf.ico" type="image/x-icon">
+    <title>Zero Frame</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="../../index.html" class="logo-link-header">
+            <img src="assets/logo zf.png" alt="Zero Frame Logo" class="logo">
+        </a>
+        <nav class="navigation-header">
+            <ul class="nav-menus-ul links">
+                <li><a href="#" class="itens-nav-menus">ORIGINAIS</a></li>
+                <li><a href="#" class="itens-nav-menus">MULTIMARCAS</a></li>
+                <li><a href="#" class="itens-nav-menus">SOBRE NÓS</a></li>
+            </ul>
+
+            <div class="search-bar-container">
+                <input type="text" placeholder="O que você está procurando?" class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <ul class="user-actions-ul links">
+                <li><a href="#" class="user-actions-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#" class="user-actions-icon"><i class="fa-solid fa-user"></i></a></li>
+                <li><button class="theme-toggle-button" id="toggle-button">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <div class="register-container">
+
+            <h1 class="register-title">Criar uma conta</h1>
+            <form class="register-form">
+                <div class="register-input-container">
+                    <input type="email" placeholder="digite seu email" class="register-input">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="register-input-container">
+                    <input type="password" placeholder="digite sua senha" class="register-input">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="register-input-container">
+                    <input type="password" placeholder="confirme sua senha" class="register-input">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <button type="submit" class="register-button">Criar a conta</button>
+
+            </form>
+
+            <div class="login-container">
+                <h2 class="login-prompt">Já tem uma conta?</h2>
+                <a href="../login-page/login.html" class="login-link">Faça login</a>
+            </div>
+        </div>
+
+        <img src="assets/logo zf.png" alt="Zero Frame Logo" class="logo-register">
+
+    </main>
+
+</body>
+
+<script src="theme-toggle.js"></script>
+
+</html>
