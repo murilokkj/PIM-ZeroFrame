@@ -44,16 +44,30 @@ PIM-ZeroFrame/
 │   ├── carrossel-categorias.css  # Estilos do carrossel
 │   └── carrossel-categorias.js   # Script do carrossel
 └── pages/                      # Diretório para páginas adicionais
+    ├── carrinho/
+    │   ├── carrinho.html       # Página do carrinho de compras
+    │   ├── carrinho.css        # Estilos da página do carrinho
+    │   ├── carrinho.js         # Script da página do carrinho
+    │   └── assets/
+    │       └── products/       # Imagens dos produtos no carrinho
     ├── login-page/
     │   ├── login.html          # Página de login
     │   ├── login.css           # Estilos da página de login
-    │   ├── theme-toggle.js     # Script de toggle de tema para login
     │   └── assets/             # Assets específicos da página de login
-    └── register-page/
-        ├── register.html       # Página de registro
-        ├── register.css        # Estilos da página de registro
-        ├── theme-toggle.js     # Script de toggle de tema para registro
-        └── assets/             # Assets específicos da página de registro
+    ├── produtos/               # Página de produtos
+    ├── register-page/
+    │   ├── register.html       # Página de registro
+    │   ├── register.css        # Estilos da página de registro
+    │   ├── theme-toggle.js     # Script de toggle de tema para registro
+    │   └── assets/             # Assets específicos da página de registro
+    ├── search/                 # Página de busca
+    └── sobre/
+        ├── sobre.html          # Página sobre nós
+        ├── sobre.css           # Estilos da página sobre
+        └── slider fundadores/
+            ├── slider.css      # Estilos do slider dos fundadores
+            ├── slider.js       # Script do slider dos fundadores
+            └── assets/         # Assets do slider
 ```
 
 ## Como Executar

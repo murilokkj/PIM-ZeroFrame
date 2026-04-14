@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logo-zf.ico" type="image/x-icon">
+    <title>Zero Frame</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="../../index.html" class="logo-link-header">
+            <img src="assets/logo zf.png" alt="Zero Frame Logo" class="logo">
+        </a>
+        <nav class="navigation-header">
+            <ul class="nav-menus-ul links">
+                <li><a href="#" class="itens-nav-menus">ORIGINAIS</a></li>
+                <li><a href="#" class="itens-nav-menus">MULTIMARCAS</a></li>
+                <li><a href="#" class="itens-nav-menus">SOBRE NÓS</a></li>
+            </ul>
+
+            <div class="search-bar-container">
+                <input type="text" placeholder="O que você está procurando?" class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <ul class="user-actions-ul links">
+                <li><a href="#" class="user-actions-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#" class="user-actions-icon"><i class="fa-solid fa-user"></i></a></li>
+                <li><button class="theme-toggle-button" id="toggle-button">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <div class="carrinho-container">
+            <h1 class="carrinho-title">Seu carrinho</h1>
+            <ul class="carrinho-itens-container">
+                <li class="carrinho-item-card">
+                    <input type="checkbox" class="carrinho-item-checkbox">
+                    <img src="assets/products/aj1-high-latte.png" alt="Produto 1" class="carrinho-item-image">
+                    <div class="carrinho-item-details">
+                        <p>Calçados - Multimarcas</p>
+                        <h2>Air Jordan 1 High OG Latte</h2>
+                        <h3 class="carrinho-item-price">R$ 1.200,00</p>
+                    </div>
+                </li>
+                <li class="carrinho-item-card">
+                    <input type="checkbox" class="carrinho-item-checkbox">
+                    <img src="assets/products/aj1-high-latte.png" alt="Produto 1" class="carrinho-item-image">
+                    <div class="carrinho-item-details">
+                        <p>Calçados - Multimarcas</p>
+                        <h2>Air Jordan 1 High OG Latte</h2>
+                        <div class="preco-desconto">
+                            <h3 class="carrinho-item-precoatual">R$ 1.000,00</h3>
+                            <h4 class="carrinho-item-precoanterior">R$ 1.200,00</h4>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="carrinho-item-card">
+                    <input type="checkbox" class="carrinho-item-checkbox">
+                    <img src="assets/products/aj1-high-latte.png" alt="Produto 1" class="carrinho-item-image">
+                    <div class="carrinho-item-details">
+                        <p>Calçados - Multimarcas</p>
+                        <h2>Air Jordan 1 High OG Latte</h2>
+                        <div class="preco-desconto">
+                            <h3 class="carrinho-item-precoatual">R$ 1.000,00</h3>
+                            <h4 class="carrinho-item-precoanterior">R$ 1.200,00</h4>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="carrinho-item-card">
+                    <input type="checkbox" class="carrinho-item-checkbox">
+                    <img src="assets/products/aj1-high-latte.png" alt="Produto 1" class="carrinho-item-image">
+                    <div class="carrinho-item-details">
+                        <p>Calçados - Multimarcas</p>
+                        <h2>Air Jordan 1 High OG Latte</h2>
+                        <div class="preco-desconto">
+                            <h3 class="carrinho-item-precoatual">R$ 1.000,00</h3>
+                            <h4 class="carrinho-item-precoanterior">R$ 1.200,00</h4>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="carrinho-item-card">
+                    <input type="checkbox" class="carrinho-item-checkbox">
+                    <img src="assets/products/aj1-high-latte.png" alt="Produto 1" class="carrinho-item-image">
+                    <div class="carrinho-item-details">
+                        <p>Calçados - Multimarcas</p>
+                        <h2>Air Jordan 1 High OG Latte</h2>
+                        <div class="preco-desconto">
+                            <h3 class="carrinho-item-precoatual">R$ 1.000,00</h3>
+                            <h4 class="carrinho-item-precoanterior">R$ 1.200,00</h4>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>  
+
+        <div class="carrinho-summary">
+                <h2>Resumo</h2>
+                <div class="total-itens carrinho-summary-item">
+                    <p>Total dos itens:</p>
+                    <p>R$ 1100,00</p>
+                </div>
+                <div class="total-desconto carrinho-summary-item">
+                    <p>Desconto:</p>
+                    <p class="desconto-valor">R$ 0</p>
+                </div>
+                <div class="subtotal carrinho-summary-item carrinho-summary-item-highlight">
+                    <p>Subtotal:</p>
+                    <p>R$ 1100,00</p>
+                </div>
+                <div class="frete carrinho-summary-item">
+                    <p>Frete:</p>
+                    <p>Grátis</p>
+                </div>
+                <div class="total-geral carrinho-summary-item carrinho-summary-item-highlight">
+                    <p>Total geral:</p>
+                    <p>R$ 1100,00</p>  
+                </div>
+                <button class="finalizar-compra-button">Finalizar compra
+                        <i class="fa-solid fa-money-bill"></i>
+                </button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-zf-container">
+            <img src="assets/logo zf.png" alt="Zero Frame Logo" class="footer-logo">
+            <p class="footer-text footer-link">© 2026 Zero Frame.<br>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="line footer-link"></div>
+
+        <div class="footer-itens-container">
+
+            <div class="footer-about-container">
+                <h3 class="footer-content-title">SOBRE</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#" class="footer-link">Conheça a empresa</a></li>
+                    <li><a href="#" class="footer-link">Criadores</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-multimarcas-container">
+                <h3 class="footer-content-title">MULTIMARCAS</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#multimarcas-em-alta" class="footer-link">Produtos em alta</a></li>
+                    <li><a href="#" class="footer-link">Todos os produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-originais-container">
+                <h3 class="footer-content-title">ORIGINAIS</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#originais-em-alta" class="footer-link">Produtos em alta</a></li>
+                    <li><a href="#" class="footer-link">Todos os produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-categorias-container">
+                <h3 class="footer-content-title">CATEGORIAS</h3>
+                <ul class="footer-about-list">
+                    <li><a href="#" class="footer-link">Camisas</a></li>
+                    <li><a href="#" class="footer-link">Blusas</a></li>
+                    <li><a href="#" class="footer-link">Calças</a></li>
+                    <li><a href="#" class="footer-link">Bermudas</a></li>
+                    <li><a href="#" class="footer-link">Calçados</a></li>
+                    <li><a href="#" class="footer-link">Acessórios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+<script src="../../theme-toggle.js"></script>
+
+
+</html>

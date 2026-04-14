@@ -313,15 +313,9 @@ li {
 }
 
 .product-image {
-  height: 12.5rem;
-  width: auto;
-  aspect-ratio: 1 / 1;
-}
-
-.product-image img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover; /* mantém proporção */
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .product-category {
@@ -339,10 +333,6 @@ li {
     font-weight: 700;
 }
 
-/* .product-sale {
-    box-shadow: #FD3737 0px 0px 0.8rem;
-    border: #FD3737 0.2rem solid;
-} */
 
 .product-sale .product-price {
     color: #FD3737;
@@ -427,7 +417,6 @@ footer {
 }
 
 .footer-link {
-    transition: 0.3s ease-in-out;
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: 400;
@@ -436,7 +425,6 @@ footer {
 .footer-link:hover {
     text-decoration: underline;
     font-weight: 600;
-    transition: 0.3s ease-in-out;
 }
 
 .footer-content-title {
