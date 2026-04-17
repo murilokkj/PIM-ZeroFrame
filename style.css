@@ -31,6 +31,7 @@ body {
 }
 
 .header {
+    transition: 0.3s ease-in-out;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -387,6 +388,7 @@ li {
 /* Estilos dos footers */
 
 footer {
+    transition: 0.3s ease-in-out;
     background-color: var(--primary-color);
     display: flex;
     padding: 2rem;
@@ -446,4 +448,9 @@ footer {
 
 .modoescuro .footer-link {
     color: var(--accent-color);
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
 }

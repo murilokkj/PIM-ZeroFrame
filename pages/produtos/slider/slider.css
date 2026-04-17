@@ -1,0 +1,27 @@
+.slider {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+.slider-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #F5EBE0;
+    border: none;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.slider-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--accent-secondary-color);
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}

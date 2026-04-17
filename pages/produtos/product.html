@@ -4,19 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./carrossel-categorias/carrossel-categorias.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./slider/slider.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="./carrossel-categorias/carrossel-categorias.js"></script>
-    <script type="text/javascript" src="./theme-toggle.js" defer></script>
-    <link rel="icon" href="./assets/logo-zf.ico" type="image/png">
+    <link rel="shortcut icon" href="../../assets/logo-zf.ico" type="image/x-icon">
     <title>Zero Frame</title>
 </head>
 
@@ -24,14 +20,14 @@
 
     <header class="header">
 
-        <a href="#" class="logo-link-header">
-            <img src="assets/logo zf.png" alt="Zero Frame Logo" class="logo">
+        <a href="../../index.html" class="logo-link-header">
+            <img src="../../assets/logo zf.png" alt="Zero Frame Logo" class="logo">
         </a>
         <nav class="navigation-header">
             <ul class="nav-menus-ul links">
                 <li><a href="#" class="itens-nav-menus">ORIGINAIS</a></li>
-                <li><a href="./pages/search/search.html" class="itens-nav-menus">MULTIMARCAS</a></li>
-                <li><a href="./pages/sobre/sobre.html" class="itens-nav-menus">SOBRE NÓS</a></li>
+                <li><a href="../search/search.html" class="itens-nav-menus">MULTIMARCAS</a></li>
+                <li><a href="../sobre/sobre.html" class="itens-nav-menus">SOBRE NÓS</a></li>
             </ul>
 
             <div class="search-bar-container">
@@ -39,9 +35,9 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <ul class="user-actions-ul links">
-                <li><a href="./pages/carrinho/carrinho.html" class="user-actions-icon"><i
+                <li><a href="../carrinho/carrinho.html" class="user-actions-icon"><i
                             class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="./pages/login-page/login.html" class="user-actions-icon"><i
+                <li><a href="../login-page/login.html" class="user-actions-icon"><i
                             class="fa-solid fa-user"></i></a></li>
                 <li><button class="theme-toggle-button" id="toggle-button">
                         <i class="fa-solid fa-sun"></i>
@@ -54,7 +50,45 @@
 
     <main>
 
-        <img src="assets/banner.png" alt="Banner Zero Frame" class="banner">
+        <section class="main-product-section">
+
+            <div class="main-product-image-container">
+                <button id="prev-button" class="slider-btn"><i class="fa-solid fa-caret-left"></i></button>
+                <div class="slider-images">
+                    <img src="./assets/camisa-over-black.webp" alt="Imagem do Produto" class="main-product-image slider on">
+                    <img src="./assets/camisa-over-black-back.webp" alt="Imagem do Produto - Verso" class="main-product-image slider">
+                </div>
+                <button id="next-button" class="slider-btn"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+
+            <div class="main-product-info-container">
+                <p class="main-product-category">Camisa - Multimarcas</p>
+                <h1 class="main-product-title">Camisa Oversized Preta</h1>
+                <p class="main-product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    5,0
+                </p>
+                <div class="sizes">
+                    <p class="sizes-title">Tamanhos:</p>
+                    <div class="size-options">
+                        <button class="size-option">P</button>
+                        <button class="size-option">M</button>
+                        <button class="size-option">G</button>
+                        <button class="size-option">GG</button>
+                    </div>
+                </div>
+
+                <h2 class="main-product-price">R$ 90,99</h2>
+                <p class="main-product-price-method">no pix ou 10x sem juros</p>
+                <div class="main-product-actions">
+                    <button class="main-buy-btn">Comprar</button>
+                    <button class="main-add-to-cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <p class="add-to-cart-text">Adicionar ao carrinho</p>
+                    </button>
+                </div>
+            </div>
+        </section>
 
         <section class="recomendados-section section-container">
 
@@ -70,7 +104,7 @@
 
             <ul class="products-container">
                 <li class="product-card">
-                    <img src="./assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
+                    <img src="../../assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Calçados - Multimarcas</p>
                         <h3 class="product-name">Air Jordan 1 High Latte</h3>
@@ -83,23 +117,21 @@
                 </li>
 
                 <li class="product-card product-sale">
-                    <a href="pages/produtos/product.html" class="product-link">
-                        <img src="./assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
-                        <div class="product-info">
-                            <p class="product-category">Camisa - Multimarcas</p>
-                            <h3 class="product-name">Camisa Oversized Preta</h3>
-                            <p class="product-discount">R$ 120,00</p>
-                            <p class="product-price">R$ 90,00</p>
-                            <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
-                        </div>
-                        <button class="add-to-cart-button">Adicionar ao Carrinho
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </button>
-                    </a>
+                    <img src="../../assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
+                    <div class="product-info">
+                        <p class="product-category">Camisa - Multimarcas</p>
+                        <h3 class="product-name">Camisa Oversized Preta</h3>
+                        <p class="product-discount">R$ 120,00</p>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
                 </li>
 
                 <li class="product-card">
-                    <img src="./assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
+                    <img src="../../assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Bermudas - Multimarcas</p>
                         <h3 class="product-name">Bermuda Jeans</h3>
@@ -112,7 +144,7 @@
                 </li>
 
                 <li class="product-card product-sale">
-                    <img src="./assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
+                    <img src="../../assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Blusas - Multimarcas</p>
                         <h3 class="product-name">Blusa Moletom</h3>
@@ -126,7 +158,7 @@
                 </li>
 
                 <li class="product-card">
-                    <img src="./assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
+                    <img src="../../assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Calças - Multimarcas</p>
                         <h3 class="product-name">Calça Jeans Baggy Levi's</h3>
@@ -139,7 +171,7 @@
                 </li>
 
                 <li class="product-card product-sale">
-                    <img src="./assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
+                    <img src="../../assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Acessórios - Multimarcas</p>
                         <h3 class="product-name">Corrente Ice</h3>
@@ -153,7 +185,7 @@
                 </li>
 
                 <li class="product-card">
-                    <img src="./assets/products/tenis2.png" alt="Produto 7" class="product-image">
+                    <img src="../../assets/products/tenis2.png" alt="Produto 7" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Calçados - Multimarcas</p>
                         <h3 class="product-name">Adidas x Bad Bunny Forum Low</h3>
@@ -185,7 +217,7 @@
             <ul class="products-container">
 
                 <li class="product-card">
-                    <img src="./assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
+                    <img src="../../assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
                     <div>
                         <p class="product-category">Calçados - Originais</p>
                         <h3 class="product-name">Air Jordan 1 High Latte</h3>
@@ -198,7 +230,7 @@
                 </li>
 
                 <li class="product-card">
-                    <img src="./assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
+                    <img src="../../assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
                     <div>
                         <p class="product-category">Camisa - Originais</p>
                         <h3 class="product-name">Camisa Oversized Preta</h3>
@@ -211,7 +243,7 @@
                 </li>
 
                 <li class="product-card">
-                    <img src="./assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
+                    <img src="../../assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Bermudas - Multimarcas</p>
                         <h3 class="product-name">Bermuda Jeans</h3>
@@ -224,7 +256,7 @@
                 </li>
 
                 <li class="product-card product-sale">
-                    <img src="./assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
+                    <img src="../../assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Blusas - Multimarcas</p>
                         <h3 class="product-name">Blusa Moletom</h3>
@@ -238,7 +270,7 @@
                 </li>
 
                 <li class="product-card">
-                    <img src="./assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
+                    <img src="../../assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Calças - Multimarcas</p>
                         <h3 class="product-name">Calça Jeans Baggy Levi's</h3>
@@ -251,7 +283,7 @@
                 </li>
 
                 <li class="product-card product-sale">
-                    <img src="./assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
+                    <img src="../../assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Acessórios - Multimarcas</p>
                         <h3 class="product-name">Corrente Ice</h3>
@@ -265,7 +297,7 @@
                 </li>
 
                 <li class="product-card">
-                    <img src="./assets/products/tenis2.png" alt="Produto 7" class="product-image">
+                    <img src="../../assets/products/tenis2.png" alt="Produto 7" class="product-image">
                     <div class="product-info">
                         <p class="product-category">Calçados - Multimarcas</p>
                         <h3 class="product-name">Adidas x Bad Bunny Forum Low</h3>
@@ -281,184 +313,12 @@
 
         </section>
 
-        <section class="multimarcas-section section-container">
-
-            <div class="section-header-container">
-                <div class="section-header" id="multimarcas-em-alta">
-                    <h2 class="section-title">MULTIMARCAS</h2>
-                    <a href="#" class="ver-todos-link">VER TODOS
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                    </a>
-                </div>
-                <hr>
-            </div>
-
-            <ul class="products-container">
-
-                <li class="product-card">
-                    <img src="./assets/products/aj1-high-latte.png" alt="Produto 1" class="product-image">
-                    <div>
-                        <p class="product-category">Calçados - Multimarcas</p>
-                        <h3 class="product-name">Air Jordan 1 High Latte</h3>
-                        <p class="product-price">R$ 1.299,99</p>
-                        <p class="price-installment">ou 10x de R$ 129,99 sem juros</p>
-                    </div>
-                    <button class="add-to-cart-button">Adicionar ao Carrinho
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </li>
-
-                <li class="product-card">
-                    <img src="./assets/products/camisa-over-black.png" alt="Produto 2" class="product-image">
-                    <div>
-                        <p class="product-category">Camisa - Multimarcas</p>
-                        <h3 class="product-name">Camisa Oversized Preta</h3>
-                        <p class="product-price">R$ 90,00</p>
-                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
-                    </div>
-                    <button class="add-to-cart-button">Adicionar ao Carrinho
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </li>
-
-                <li class="product-card">
-                    <img src="./assets/products/bermuda-jeans.jpg" alt="Produto 3" class="product-image">
-                    <div class="product-info">
-                        <p class="product-category">Bermudas - Multimarcas</p>
-                        <h3 class="product-name">Bermuda Jeans</h3>
-                        <p class="product-price">R$ 90,00</p>
-                        <p class="price-installment">ou 10x de R$ 9,00 sem juros</p>
-                    </div>
-                    <button class="add-to-cart-button">Adicionar ao Carrinho
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </li>
-
-                <li class="product-card product-sale">
-                    <img src="./assets/products/blusa-moletom.jpg" alt="Produto 4" class="product-image">
-                    <div class="product-info">
-                        <p class="product-category">Blusas - Multimarcas</p>
-                        <h3 class="product-name">Blusa Moletom</h3>
-                        <p class="product-discount">R$ 320,00</p>
-                        <p class="product-price">R$ 220,00</p>
-                        <p class="price-installment">ou 10x de R$ 22,00 sem juros</p>
-                    </div>
-                    <button class="add-to-cart-button">Adicionar ao Carrinho
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </li>
-
-                <li class="product-card">
-                    <img src="./assets/products/calca-levis-clara.png" alt="Produto 5" class="product-image">
-                    <div class="product-info">
-                        <p class="product-category">Calças - Multimarcas</p>
-                        <h3 class="product-name">Calça Jeans Baggy Levi's</h3>
-                        <p class="product-price">R$ 200,00</p>
-                        <p class="price-installment">ou 10x de R$ 20,00 sem juros</p>
-                    </div>
-                    <button class="add-to-cart-button">Adicionar ao Carrinho
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </li>
-
-                <li class="product-card product-sale">
-                    <img src="./assets/products/corrente-ice.png" alt="Produto 6" class="product-image">
-                    <div class="product-info">
-                        <p class="product-category">Acessórios - Multimarcas</p>
-                        <h3 class="product-name">Corrente Ice</h3>
-                        <p class="product-discount">R$ 500,00</p>
-                        <p class="product-price">R$ 310,90</p>
-                        <p class="price-installment">ou 10x de R$ 31,90 sem juros</p>
-                    </div>
-                    <button class="add-to-cart-button">Adicionar ao Carrinho
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </li>
-
-                <li class="product-card">
-                    <img src="./assets/products/tenis2.png" alt="Produto 7" class="product-image">
-                    <div class="product-info">
-                        <p class="product-category">Calçados - Multimarcas</p>
-                        <h3 class="product-name">Adidas x Bad Bunny Forum Low</h3>
-                        <p class="product-price">R$ 1.000,00</p>
-                        <p class="price-installment">ou 10x de R$ 100,00 sem juros</p>
-                    </div>
-                    <button class="add-to-cart-button">Adicionar ao Carrinho
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </li>
-
-            </ul>
-
-        </section>
-
-        <div class="multimarcas-section section-container">
-
-            <div class="section-header-container">
-                <div class="section-header">
-                    <h2 class="section-title">CATEGORIAS</h2>
-                </div>
-                <hr>
-            </div>
-
-            <div class="categories-carrossel">
-                <button class="nav-arrow arrow-left" onclick="changeSlide(-1)">&#10094;</button>
-
-                <div class="slider-wrapper" id="slider">
-                    <div class="card active" onclick="clickToSlide(0)">
-                        <img src="./assets/products/aj1-high-latte.png">
-                        <div class="card-info">
-                            <h3 class="category-title">Calçados</h3>
-                            <a href="#" class="btn-link">Ver todos</a>
-                        </div>
-                    </div>
-                    <div class="card" onclick="clickToSlide(1)">
-                        <img src="./assets/products/bermuda-jeans.jpg">
-                        <div class="card-info">
-                            <h3 class="category-title">Bermudas</h3>
-                            <a href="#" class="btn-link">Ver todos</a>
-                        </div>
-                    </div>
-                    <div class="card" onclick="clickToSlide(2)">
-                        <img src="./assets/products/blusa-moletom.jpg">
-                        <div class="card-info">
-                            <h3 class="category-title">Blusas</h3>
-                            <a href="#" class="btn-link">Ver todos</a>
-                        </div>
-                    </div>
-                    <div class="card" onclick="clickToSlide(3)">
-                        <img src="./assets/products/calca-levis-clara.png">
-                        <div class="card-info">
-                            <h3 class="category-title">Calças</h3>
-                            <a href="#" class="btn-link">Ver todos</a>
-                        </div>
-                    </div>
-                    <div class="card" onclick="clickToSlide(4)">
-                        <img src="./assets/products/camisa-over-black.png">
-                        <div class="card-info">
-                            <h3 class="category-title">Camisas</h3>
-                            <a href="#" class="btn-link">Ver todos</a>
-                        </div>
-                    </div>
-                    <div class="card" onclick="clickToSlide(5)">
-                        <img src="./assets/products/corrente-ice.png">
-                        <div class="card-info">
-                            <h3 class="category-title">Acessórios</h3>
-                            <a href="#" class="btn-link">Ver todos</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <button class="nav-arrow arrow-right" onclick="changeSlide(1)">&#10095;</button>
-            </div>
-        </div>
 
     </main>
 
     <footer>
         <div class="footer-zf-container">
-            <img src="assets/logo zf.png" alt="Zero Frame Logo" class="footer-logo">
+            <img src="../../assets/logo zf.png" alt="Zero Frame Logo" class="footer-logo">
             <p class="footer-text footer-link">© 2026 Zero Frame.<br>Todos os direitos reservados.</p>
         </div>
 
@@ -508,5 +368,8 @@
     </footer>
 
 </body>
+
+<script src="../../theme-toggle.js"></script>
+<script src="./slider/slider.js"></script> 
 
 </html>
